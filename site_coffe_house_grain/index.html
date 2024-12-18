@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="img">
+        <img class="falling-img" src="img/hat__santa.png" alt="Колпак санты">
+        <img class="falling-img" src="img/house.png" alt="Пряничный домик">
+        <img class="falling-img" src="img/cookies.png" alt="Печенье">
+        <img class="falling-img" src="img/candy.png" alt="Рождественский леденец">
+        <img class="falling-img" src="img/ball.png" alt="Елочный шар">
+        <img class="falling-img" src="img/snow.png" alt="Снежинка">
+        <img class="falling-img" src="img/cart.png" alt="Подарочная карта">
+        <script>
+            const images = document.querySelectorAll('.falling-img');
+            images.forEach((image, index) => {
+                image.style.left = `${Math.random() * 100}%`;
+                image.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            });
+        </script>
+    </div>
+    <div class="top center">
+        <header class="header">
+            <a class="header__logo" href="index.html">
+                <img class="logo__img" src="img/grain.svg" alt="logo"></a>
+            <nav class="header__inform">
+                <a class="header__inform__link" href="#">О нас</a>
+                <a class="header__inform__link" href="#">Меню</a>
+                <a class="header__inform__link" href="#">Отзывы</a>
+                <a class="header__inform__link" href="#">Контакты</a>
+            </nav>
+            <button class="header__inform__button">
+                Связаться
+            </button>
+        </header>
+    </div>
+    <section class="content center">
+        <div class="content__img">
+            <img class="img__coffe_beans" src="img/coffee_beans.png" alt="Кофейные зерна">
+            <img class="img__cup" src="img/Cup_Of_Coffee.png" alt="Чашка кофе">
+            <img class="img__cookies" src="img/cookies_with_chokolate.png" alt="Печенье с шоколадной крошкой">
+            <img class="img__synabon" src="img/synabon.png" alt="Синабон">
+        </div>
+        <div class="content__explain">
+            <h1 class="content__title">Добро пожаловать в «Зернышко»</h1>
+            <p class="content__subtitle">Ароматный кофе и уютная атмосфера каждый день
+            </p>
+            <p class="content__text">
+                Мы готовим кофе с душой и верим, что каждая чашка — это маленькое наслаждение, созданное для вас.
+            </p>
+            <p class="content__text">Мы предлагаем свежие зерна, уникальные авторские рецепты и заботу о природе. Наши
+                бариста рады подарить
+                вам
+                вкус и уют, из-за которых захочется возвращаться снова и снова.
+            </p>
+        </div>
+        <button class="content__button">
+            Посмотреть меню
+        </button>
+    </section>
+</body>
+
+</html>
