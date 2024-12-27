@@ -1,0 +1,235 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    select {
+        width: 203px;
+        font-size: 14px;
+    }
+
+    .header {
+        padding-top: 32px;
+
+        &__input {
+            display: none;
+        }
+    }
+
+    .heading-big {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+
+        &-mob {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    .logo {
+        width: 99px;
+
+        &__img {
+            width: 99px;
+        }
+
+    }
+
+    .title {
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    .top {
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-catalog {
+            margin-bottom: 32px;
+        }
+
+        &-catalog__title {
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+
+        &-catalog-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &-catalog-nav__link {
+            font-size: 14px;
+        }
+
+        &-catalog__filterform {
+            display: flex;
+            padding-top: 14px;
+            padding-bottom: 32px;
+        }
+    }
+
+    .for-box {
+        padding-top: 32px;
+    }
+
+    .filter-button {
+        width: 164px;
+        font-size: 14px;
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+
+        &__info {
+            gap: 13px;
+
+            &-title {
+                font-size: 22px;
+            }
+
+            &-text {
+                font-size: 12px;
+            }
+
+            &-price {
+                font-size: 20px;
+            }
+        }
+
+        &-img {
+            display: none;
+        }
+
+        &__name-box {
+            display: none;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+
+        &__button {
+            gap: 14px;
+
+            &-link1 {
+                width: 166px;
+                height: 37px;
+                font-size: 12px;
+            }
+
+            &-link2 {
+                width: 163px;
+                height: 37px;
+                font-size: 11px;
+            }
+        }
+    }
+
+    .link {
+        font-size: 14px;
+    }
+
+    .product-box {
+        padding-top: 48px;
+    }
+
+    .product-box__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .filter-button-nav {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filtering-form {
+        right: -77px;
+
+        &__content-wrapper {
+            min-width: 190.5px;
+            max-height: 830px;
+        }
+    }
+
+    .product {
+        width: 343px;
+
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__price {
+            font-size: 18px;
+        }
+
+        &__price_old {
+            font-size: 18px;
+        }
+    }
+
+    .catalog {
+        margin-bottom: 32px;
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &__item {
+            grid-column: 1 / -1;
+            height: 375px;
+            line-height: 34px;
+
+            &_big {
+                height: 244px;
+            }
+        }
+    }
+
+    .footer {
+        padding-bottom: 32px;
+
+        &__content {
+            justify-content: center;
+            gap: 34px;
+        }
+
+        &__info {
+            gap: 100px;
+        }
+
+    }
+
+}

@@ -1,0 +1,221 @@
+.top-cart {
+    height: 400px;
+    background-image: url(images/top_cart.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-big {
+    color: $color-text;
+    font-size: 64px;
+    font-weight: 600;
+    margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__item {
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &-title {
+            font-size: 24px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        &-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #888888;
+            text-align: left;
+        }
+
+        &-price {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    &__link {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    &__number {
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        width: 71px;
+        height: 51px;
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        border: 1px solid $color-text;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        margin-top: 50px;
+    }
+
+    &__button-link1 {
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        width: 200px;
+        height: 37px;
+        display: block;
+        color: rgb(2, 2, 2);
+        padding: 10px 10px;
+
+        &:hover {
+            background:rgb(0, 0, 0);
+            transition: background-color 0.3s ease;
+            color: $color-text;
+        }
+    }
+
+    &__button-link2 {
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        width: 200px;
+        height: 37px;
+        display: block;
+        color: rgb(2, 2, 2);
+        padding: 10px 10px;
+
+        &:hover {
+            background:rgb(0, 0, 0);
+            transition: background-color 0.3s ease;
+            color: $color-text;
+        }
+    }
+
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        grid-column: span 4;
+        padding: 42px 44px 64px 27px;
+        height: 556px;
+
+        &-title {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        &-record {
+            margin-bottom: 44px;
+        }
+
+        &-text {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 400;
+            align-items: center;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgb(202, 205, 216);
+        }
+
+        &-total {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &-total1 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        &-total2 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &-order {
+            display: flex;
+            justify-content: center;
+            margin-top: 18px;
+        }
+    }
+
+    &__link-order {
+        width: 290px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        background: transparent;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: rgb(0, 0, 0);
+            transform: scale(1.05);
+            color: $color-text; 
+        }
+        
+        &:active {
+            transform: scale(0.95); 
+        }
+    }
+}
